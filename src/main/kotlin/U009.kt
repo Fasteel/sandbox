@@ -19,12 +19,8 @@ package org.example
  * 1,2,9 -> false
  */
 
-// FIXME to improve using sorted
 fun isTriangle(a: Int, b: Int, c: Int): Boolean {
     if (a <= 0 || b <= 0 || c <= 0) return false
-    val result = mutableListOf(a, b, c)
-    val max = result.max()
-    result.remove(max)
-    val sum = result.sum()
-    return sum > max
+    val res = listOf(a, b, c).sorted()
+    return res[0] + res[1] > res[2]
 }
