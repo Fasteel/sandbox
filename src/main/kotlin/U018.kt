@@ -21,13 +21,10 @@ package org.example
  * two_sum([3, 2, 4], 6) == {1, 2}
  */
 fun twoSum(numbers: IntArray, target: Int): Pair<Int, Int> {
-    for (i in numbers.indices) {
-        for (y in i + 1 until numbers.size) {
-            if (numbers[i] + numbers[y] == target) {
+    for (i in numbers.indices)
+        for (y in i + 1 until numbers.size)
+            if (numbers[i] + numbers[y] == target)
                 return Pair(i, y)
-            }
-        }
-    }
 
     throw Exception()
 }
