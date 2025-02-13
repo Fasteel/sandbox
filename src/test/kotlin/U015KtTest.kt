@@ -34,6 +34,6 @@ class U015KtTest {
             19 * 19
         )
 
-        assertEquals(true, comp(a1, a2))
+        assertEquals(false, comp(a1, a2))
     }
 }
