@@ -10,7 +10,7 @@ class U022KtTest {
 
     @Test
     fun test() {
-        dotest(intArrayOf(), intArrayOf(0));
+        dotest(intArrayOf(), intArrayOf(0))
         dotest(intArrayOf(0, 1, 3, 6, 10), intArrayOf(20, 20, 19, 16, 10, 0))
         dotest(intArrayOf(1, 2, 3, 4, 5, 6), intArrayOf(21, 20, 18, 15, 11, 6, 0))
         dotest(
