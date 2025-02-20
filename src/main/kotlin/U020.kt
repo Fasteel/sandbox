@@ -39,14 +39,14 @@ package org.example
  * category W: 0 books
  */
 
-object StockList {
-    fun stockSummary(lstOfArt: Array<String>, lstOfCat: Array<String>): String {
-        if (lstOfArt.isEmpty() || lstOfCat.isEmpty()) return ""
-
-        val stockMap = lstOfCat.associateWith { category ->
-            lstOfArt.filter { it.startsWith(category) }.sumOf { it.split(" ")[1].toInt() }
-        }
-
-        return stockMap.entries.joinToString(" - ") { "(${it.key} : ${it.value})" }
-    }
-}
+//object StockList {
+//    fun stockSummary(lstOfArt: Array<String>, lstOfCat: Array<String>): String {
+//        if (lstOfArt.isEmpty() || lstOfCat.isEmpty()) return ""
+//
+//        val stockMap = lstOfCat.associateWith { category ->
+//            lstOfArt.filter { it.startsWith(category) }.sumOf { it.split(" ")[1].toInt() }
+//        }
+//
+//        return stockMap.entries.joinToString(" - ") { "(${it.key} : ${it.value})" }
+//    }
+//}
