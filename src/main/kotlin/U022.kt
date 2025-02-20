@@ -43,14 +43,14 @@ package org.example
 //    return res.toIntArray()
 //}
 
-fun sumParts(ls: IntArray): IntArray {
-    val result = IntArray(ls.size + 1)
-    for (i in ls.indices.reversed()) {
-        result[i] = result[i + 1] + ls[i]
-    }
-    return result
-}
+//fun sumParts(ls: IntArray): IntArray {
+//    val result = IntArray(ls.size + 1)
+//    for (i in ls.indices.reversed()) {
+//        result[i] = result[i + 1] + ls[i]
+//    }
+//    return result
+//}
 
 fun main() {
-    sumParts(intArrayOf(0, 1, 3, 6, 10))
+//    sumParts(intArrayOf(0, 1, 3, 6, 10))
 }
