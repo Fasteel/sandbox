@@ -1,7 +1,5 @@
 package org.example
 
-import kotlin.math.round
-
 /**
  * Let us begin with an example:
  *
@@ -40,32 +38,32 @@ import kotlin.math.round
  * We don't take care of a deposit of savings in a bank:-)
  */
 
-object BuyCar {
-    fun nbMonths(
-        startPriceOld: Int,
-        startPriceNew: Int,
-        savingPerMonth: Int,
-        percentLossByMonth: Double
-    ): Pair<Int, Int> {
-        if (startPriceOld >= startPriceNew) {
-            return 0 to startPriceOld - startPriceNew
-        }
-        var currentStartPriceNew = startPriceNew.toDouble()
-        var currentStartPriceOld = startPriceOld.toDouble()
-        var month = 0
-        var money = 0
-        var currentPercentLossByMonth = percentLossByMonth
-        while (true) {
-            month += 1
-            money += savingPerMonth
-            if (month.mod(2) == 0) {
-                currentPercentLossByMonth += 0.5
-            }
-            currentStartPriceNew -= (currentStartPriceNew * currentPercentLossByMonth) / 100
-            currentStartPriceOld -= (currentStartPriceOld * currentPercentLossByMonth) / 100
-            if (money + currentStartPriceOld >= currentStartPriceNew) {
-                return month to round(money + currentStartPriceOld - currentStartPriceNew).toInt()
-            }
-        }
-    }
-}
+//object BuyCar {
+//    fun nbMonths(
+//        startPriceOld: Int,
+//        startPriceNew: Int,
+//        savingPerMonth: Int,
+//        percentLossByMonth: Double
+//    ): Pair<Int, Int> {
+//        if (startPriceOld >= startPriceNew) {
+//            return 0 to startPriceOld - startPriceNew
+//        }
+//        var currentStartPriceNew = startPriceNew.toDouble()
+//        var currentStartPriceOld = startPriceOld.toDouble()
+//        var month = 0
+//        var money = 0
+//        var currentPercentLossByMonth = percentLossByMonth
+//        while (true) {
+//            month += 1
+//            money += savingPerMonth
+//            if (month.mod(2) == 0) {
+//                currentPercentLossByMonth += 0.5
+//            }
+//            currentStartPriceNew -= (currentStartPriceNew * currentPercentLossByMonth) / 100
+//            currentStartPriceOld -= (currentStartPriceOld * currentPercentLossByMonth) / 100
+//            if (money + currentStartPriceOld >= currentStartPriceNew) {
+//                return month to round(money + currentStartPriceOld - currentStartPriceNew).toInt()
+//            }
+//        }
+//    }
+//}
