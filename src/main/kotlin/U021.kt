@@ -20,17 +20,17 @@ package org.example
  * Program "iiisdosodddddiso" should return numbers [8, 64, 3600].
  */
 
-fun parse(data: String): List<Int> = buildList {
-    var value = 0
-    for (char in data) {
-        when (char) {
-            'i' -> value++
-            'd' -> value--
-            's' -> value *= value
-            'o' -> add(value)
-        }
-    }
-}
+//fun parse(data: String): List<Int> = buildList {
+//    var value = 0
+//    for (char in data) {
+//        when (char) {
+//            'i' -> value++
+//            'd' -> value--
+//            's' -> value *= value
+//            'o' -> add(value)
+//        }
+//    }
+//}
 
 fun main() {
 }
