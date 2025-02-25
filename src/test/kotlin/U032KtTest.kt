@@ -1,5 +1,5 @@
-class U029KtTest {
-//
+class U032KtTest {
+
 //    private fun testing(
 //        startPriceOld: Int,
 //        startPriceNew: Int,
@@ -19,5 +19,7 @@ class U029KtTest {
 //        testing(8000, 12000, 500, 1.0, Pair(8, 597))
 //        testing(18000, 32000, 1500, 1.25, Pair(8, 332))
 //        testing(7500, 32000, 300, 1.55, Pair(25, 122))
+//
 //    }
+
 }
