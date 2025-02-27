@@ -29,15 +29,6 @@ package org.example
  * consecutive strings : follow one after another without an interruption
  */
 
-fun main() {
-    longestConsec(
-        arrayOf<String>(
-            "zone",
-            "abigail",
-        ), 3
-    )
-}
-
 fun indexExists(list: Array<*>, index: Int): Boolean {
     return index >= 0 && index < list.size
 }

@@ -22,9 +22,6 @@ package org.example
  * With list [20,37,20,21] and number 1, the result would be [20,37,21].
  */
 
-fun main() {
-}
-
 fun deleteNth(elements: IntArray, maxOcurrences: Int): IntArray {
     val count = mutableMapOf<Int, Int>()
 

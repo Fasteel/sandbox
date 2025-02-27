@@ -18,7 +18,3 @@ package org.example
 //
 //    return res
 //}
-
-fun main() {
-//    println(sqInRect(5, 3))
-}

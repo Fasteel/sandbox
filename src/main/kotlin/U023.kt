@@ -25,15 +25,11 @@ package org.example
  * s = "123456" gives "234561".
  *
  */
-fun revRot(nums: String, sz: Int) =
-    nums
-        .chunked(sz)
-        .filter { it.length == sz }
-        .joinToString("") {
-            val chunkSum = it.sumOf(Char::digitToInt)
-            if (chunkSum.mod(2) == 0) it.reversed() else it.substring(1) + it.first()
-        }
-
-
-fun main() {
-}
+//fun revRot(nums: String, sz: Int) =
+//    nums
+//        .chunked(sz)
+//        .filter { it.length == sz }
+//        .joinToString("") {
+//            val chunkSum = it.sumOf(Char::digitToInt)
+//            if (chunkSum.mod(2) == 0) it.reversed() else it.substring(1) + it.first()
+//        }

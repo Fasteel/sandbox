@@ -1,5 +1,6 @@
 package org.example
 
 fun main() {
-    println("hello world!")
+    val test = "123"
+    print(test.sumOf { v -> v.digitToInt() })
 }

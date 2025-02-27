@@ -5,7 +5,4 @@ package org.example
  * into its string representation.
  */
 
-fun main() {
-}
-
 fun convert(b: Boolean) = b.toString()

@@ -50,7 +50,3 @@ package org.example
 //    }
 //    return result
 //}
-
-fun main() {
-//    sumParts(intArrayOf(0, 1, 3, 6, 10))
-}

@@ -33,7 +33,3 @@ fun makeComplement(dna: String): String {
         }
     }.joinToString("")
 }
-
-fun main() {
-
-}
