@@ -21,9 +21,9 @@ package org.example
  * You can see another examples in the "Sample tests".
  *
  */
-fun meeting(s: String) = s
-    .uppercase()
-    .splitToSequence(';')
-    .map { it.split(":") }
-    .sortedWith(compareBy({ it[1] }, { it[0] }))
-    .joinToString("") { (firstName, lastName) -> "($lastName, $firstName)" }
+//fun meeting(s: String) = s
+//    .uppercase()
+//    .splitToSequence(';')
+//    .map { it.split(":") }
+//    .sortedWith(compareBy({ it[1] }, { it[0] }))
+//    .joinToString("") { (firstName, lastName) -> "($lastName, $firstName)" }
